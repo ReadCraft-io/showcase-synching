@@ -94,9 +94,12 @@ function createVersionPickerNote() {
     var note = document.createElement('div');
     note.id = 'version-picker-note';
     note.classList.add('admonition', 'hint');
+    note.style.backgroundColor = 'silver';
+    note.style.borderBottom = '1px solid #CCC';
+    note.style.padding = '5px';
     note.style.textAlign = 'center';
     note.append(span);
-    var doc = document.getElementsByClassName('document')[0];
+    var doc = document.getElementsByTagName('body')[0];
     doc.prepend(note);
 
     return note;

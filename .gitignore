@@ -4,3 +4,6 @@ _deployed.old
 _syncthing
 /RELEASE
 /TAG
+.venv/
+venv/
+__pycache__/
